@@ -1,0 +1,18 @@
+.clearfloat{
+	zoom:1;
+}
+
+.clearfloat:after{
+	content: "";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear:both;
+}
+
+.public-container{
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+}
+
