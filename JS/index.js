@@ -1,3 +1,4 @@
+documentWidth=window.screen.availWidth;
 $(function(){
 		$('#dowebok').fullpage({
 			navigation:true,
@@ -39,5 +40,11 @@ $(function(){
 	$(".role-icon-bar").mouseout(function(){
 		$("#role-icon-shadow").css("display","none");
 	});*/
+		if(documentWidth<500){
+			$(".page-one").css("opacity","1");
+			$(".hobby-anim").css("opacity","1");
+			$(".progress").css("width","100%");
+			
+		}
 });
 
