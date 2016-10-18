@@ -1,0 +1,353 @@
+*{
+	font-family: "Microsoft Yahei";
+}
+
+.section{
+	position: relative;
+}
+
+#same-bg{
+	z-index: -1;
+}
+
+.section-content{
+
+	position: absolute;
+	z-index: 99;
+	top: 50%;
+	left:50%;
+	margin-left: -250px;
+	margin-top: -150px;
+	width: 500px;
+	height: 300px;
+}
+
+.section-content #center-label{
+	display: block;
+}
+
+.thumbnail img{
+	width: 130px;
+	height: 130px;
+}
+
+.thumbnail .caption p{
+	font-size: 16px;
+}
+
+@keyframes showSlowy{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+.showSlowy{
+  animation: showSlowy 3s ease .2s;
+  animation-fill-mode: forwards;
+}
+
+.page-one{
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+#luo-img{
+	position: relative;
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+#role-icon{
+	display: block;
+	border-radius: 50%;
+	transform: rotate(31deg);
+}
+
+#luo-img:hover #role-icon-shadow{
+	opacity: 1;
+}
+#role-icon-shadow{
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	border-radius: 50%;
+	box-shadow: 0px 0px 40px 10px #FF9966;
+	-webkit-box-shadow: 0px 0px 40px 10px #FF9966;
+	z-index: 9;
+	transition:all .5s ease ;
+}
+
+.horizon-line{
+	width: 100%;
+	margin-top: 10px;
+	border: 1px solid #ccc;
+}
+
+.section-content #center-label{
+	font-size: 26px;
+	margin-top: 10px;
+	text-align: center;
+	line-height: 1.5;
+
+}
+
+.section-content .author{
+	font-size: 16px;
+	color:#fff;
+}
+
+/*PAGE2*/
+
+.section_page2{
+	width: 800px;
+	height:600px;
+	margin-left: -400px;
+	margin-top: -300px;
+	background: rgba(0,0,0,0.6);
+}
+
+.section_page2:after,.section_page2:before{
+	content: "";
+	z-index: -1;
+	position: absolute;
+	top: 5%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-radius: 100px/10px;
+	box-shadow:0 0px 20px rgba(0,0,0,.6);
+}
+
+/*PAGE3*/
+.hobby-anim{
+	opacity: 0;
+}
+
+.hobby-single-block:hover{
+	transform: scale(1.3);
+}
+
+.hobby-single-block:hover .hobby-border{
+	-webkit-transform:rotate(180deg);
+			transform:rotate(180deg);
+}
+
+.hobby-single-block:hover .mask{
+	color:rgba(255,255,255,1);
+	background: rgba(0,0,0,.5);
+}
+
+.hobbies-detail .hobby-single-block{
+	position: relative;
+	width: 180px;
+	height: 180px;
+	margin: 0 auto;
+	border-radius: 50%;
+	cursor: pointer;
+	transition:all .5s ease-in-out .2s; 
+}
+
+.hobby-single-block img{
+	display: block;
+}
+
+.hobby-single-block .mask{
+	width: 180px;
+	height: 180px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    color: rgba(255,255,255,0);
+    transition:all .3s ease;
+    -webkit-transition:all .3s ease;
+}
+
+.hobbies-detail .hobby-border{
+	width: 180px;
+	height: 180px;
+    position: absolute;
+    left: 0;
+    top: 0;
+   
+    border: 10px solid #ccc;
+    border-radius: 50%;
+    border-left-color:#E07514;
+	border-top-color:#E07514;
+	transition:transform .3s linear;
+}
+
+.hobbies-detail .hobby-info{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	transform: translateY(-50%);
+	
+}
+
+.skill-grade-detail{
+	height: 40%;
+}
+
+.section-page4{
+	width: 1100px;
+	height:800px;
+	margin-left: -550px;
+	margin-top: -400px;
+	text-align: center;
+}
+
+.skill-grade{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 70px 0 0 0;
+}
+
+.skill-grade h1{
+	text-align: center;
+}
+
+.hobbies-detail{
+	height: 50%;
+}
+
+
+
+.skill-grade .hobbies{
+	position: relative;
+	width: 100%;
+	height: 180px;
+	margin: 75px auto;
+}
+
+.hobby-reset{
+	transform: translateY(0);
+	transform-origin: center bottom;
+	transform: rotate(0deg);
+}
+
+.sy-flash{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+.section-page4 .demo-show-block{
+	margin-top: 9%;
+}
+
+@keyframes rotateShow{
+	0%{
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+.role-icon-bar{
+	-webkit-animation: rotateShow 1.8s ease .2s;
+	-o-animation: rotateShow 1.8s ease .2s;
+	animation: rotateShow 1.8s ease .2s;
+}
+
+
+
+@keyframes slowDown{
+	0%{
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.slowDown{
+	-webkit-animation: slowDown 1.6s ease-in-out .2s;
+	-o-animation: slowDown 1.6s ease-in-out .2s;
+	animation: slowDown 1.6s ease-in-out .2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes progressAdd{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
+}
+
+.progress{
+	width: 0%;
+}
+
+.progressAdd{ 
+	-webkit-animation: progressAdd 1.5s ease-out 0.2s;
+	-o-animation: progressAdd 1.5s ease-out 0.2s;
+	animation: progressAdd 1.5s ease-out 0.2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes run {
+      0% {
+        transform:rotateX(-5deg) rotateY(0);	
+      }
+      50% {
+        transform:rotateX(0) rotateY(360deg);	
+		text-shadow: 1px  1px 1px #ccc,
+                     0 0 10px #fff,
+                     0 0 20px #fff,
+                     0 0 30px #fff,
+                     0 0 40px #3EFF3E,
+                     0 0 70px #3EFFff,
+                     0 0 80px #3EFFff,
+                     0 0 100px #3EFFee,
+                     0 0 150px #3EFFee;       
+      }
+      100% {
+        transform:rotateX(5deg) rotateY(360deg);	
+      }
+}
+
+h1{
+	font-size: 60px;
+	text-shadow:     1px  1px 1px #ccc,
+                     0 0 10px #fff,
+                     0 0 20px #fff,
+                     0 0 30px #80bfff,
+                     0 0 40px #80bfff,
+                     0 0 70px #3399ff,
+                     0 0 80px #3399ff,
+                     0 0 100px #007fff,
+                     0 0 150px #007fff;   
+    animation: run  ease-in-out 3s infinite;
+}
+
+
+
+
+
+
