@@ -6,10 +6,6 @@
 	position: relative;
 }
 
-#same-bg{
-	z-index: -1;
-}
-
 .section-content{
 
 	position: absolute;
@@ -346,6 +342,11 @@ h1{
     animation: run  ease-in-out 3s infinite;
 }
 
+.section{
+	background: url(../Images/1.jpg);
+	background-size: cover;
+	background-position: 50% 0;
+}
 
 
 
