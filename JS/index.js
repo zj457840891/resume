@@ -49,7 +49,7 @@ $(function(){
 
 	
 			try {
-				$('.water-animate').ripples({
+				$('.section').ripples({
 					resolution: 512,
 					dropRadius: 10, //px
 					perturbance: 0.04,
