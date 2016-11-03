@@ -1,5 +1,10 @@
 documentWidth=window.screen.availWidth;
 $(function(){
+		/***屏幕适配***/
+		document.documentElement.style.fontSize=document.documentElement.clientWidth/7.5+'px';
+		window.addEventListener('resize',function(){document.documentElement.style.fontSize=document.documentElement.clientWidth/7.5+'px';})
+		
+		/***fullpage***/
 		$('#dowebok').fullpage({
 			navigation:true,
 			navigationTooltips:["个人简介","校园景色","兴趣能力","学习Demo"],

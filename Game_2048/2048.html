@@ -37,6 +37,15 @@
 		<div class="grid-cell" id="grid-cell-3-2"></div>
 		<div class="grid-cell" id="grid-cell-3-3"></div>
 	</div>
+	<script>
+		window.onload=function(){
+			document.documentElement.style.fontSize=document.documentElement.clientWidth/75+'px';
+			window.addEventListener('resize',function(){
+				document.documentElement.style.fontSize=document.documentElement.clientWidth/75+'px';
+			})
+		}
 
+
+	</script>
 </body>
 </html>
